@@ -4,7 +4,7 @@ def longestCommonSubstring(s, t):
         return 0
     from collections import defaultdict as d
     a = d(list)
-    for i in xrange(len(t)):
+    for i in range(len(t)):
         a[t[i]].append(i)
     m = 0
     i = 0
